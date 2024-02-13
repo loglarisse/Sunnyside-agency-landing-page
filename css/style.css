@@ -36,7 +36,7 @@
   /* Responsive */
   @media screen and (max-width: 1024px) {
     /* padding */
-    --default-padding: 1rem;
+    --default-padding: 1.5rem;
     --button-padding: 0.8rem 1rem;
     --section-padding: 5rem 0;
     --description-padding: 10rem 5rem;
@@ -71,6 +71,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  
 }
 li {
   list-style: none;
@@ -129,8 +130,8 @@ li {
 /* hero section  */
 .hero {
   background-image: url(./../images/desktop/image-header.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-repeat: no-repeat;c
+  background-position: center;
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -196,6 +197,7 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  align-items:center ;
 }
 
 /* Expertise */
@@ -329,15 +331,17 @@ li {
   color: var(--white-color);
   padding: var(--section-padding);
   text-align: center;
+  justify-content: center;
+ 
 }
 
 .footer__nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
   text-align: center;
   margin: 1rem 0;
+  align-items: center;
 }
 
 .footer__list {
@@ -361,12 +365,9 @@ li {
 
 /* ------------------ Responsive ---------------------  */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 749px) {
   .nav__list {
     display: none;
-  }
-  .nav__hamburger {
-    display: block;
   }
   .nav {
     text-align: right;
@@ -389,11 +390,16 @@ li {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 750px) {
   .nav__list {
     display: flex;
   }
   .nav__hamburger {
     display: none;
+    text-align: center;
+    .about__image-img 
+    justify-content:space-between;
   }
+   
+    
 }
